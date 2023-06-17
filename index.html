@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div id="maindiv">
+        <section style="margin-bottom: 3rem;margin-top: 2rem;">Add New Employees</section>
+
+        <section id="employees_form" >
+            <section class="employees_form_items">
+                <label for="name">Enter Name</label>
+                <input id="name" type="text">
+            </section>
+
+            <section class="employees_form_items">
+                <label for="profession">Enter Profession</label>
+                <input id="profession" type="text">
+            </section>
+
+            <section class="employees_form_items">
+                <label for="age">Enter Age</label>
+                <input id="age" type="text">
+            </section>
+        </section>
+
+        <button id="adduserbtn" onclick="addUser()">Add User</button>
+
+        <section id="message">
+            <label>You have 0 Employees.</label>
+        </section>
+
+        <section id="employees_list_container">
+            <label for="">Added Employees</label>
+
+            <ul id="employees_list"></ul>
+        </section>
+    </div>
+<script src="index.js"></script>    
+</body>
+</html>
